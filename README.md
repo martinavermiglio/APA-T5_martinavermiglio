@@ -260,7 +260,7 @@ def estereo2mono(ficEste, ficMono, canal=2):
         
         # escritura de datos
         fpOut.write(st.pack(f"<{len(mono)}h", *mono))
-´´´
+```
 
 ##### Código de `mono2estereo()`
 
