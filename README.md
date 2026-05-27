@@ -309,7 +309,7 @@ def mono2estereo(ficIzq, ficDer, ficEste):
         fpOut.write(st.pack(fmtSub2, b'data', nuevoSubChunk2Size))
         
         fpOut.write(st.pack(f"<{len(estereo)}h", *estereo))
-´´´
+```
 
 ##### Código de `codEstereo()`
 
@@ -350,7 +350,7 @@ def codEstereo(ficEste, ficCod):
         
         # guardamos como enteros sin signo ('I')
         fpOut.write(st.pack(f"<{len(codificado)}I", *codificado))
-´´´
+```
 
 ##### Código de `decEstereo()`
 
@@ -396,7 +396,7 @@ def decEstereo(ficCod, ficEste):
         fpOut.write(st.pack(fmtSub2, sub2Id, nuevoSubChunk2Size))
         
         fpOut.write(st.pack(f"<{len(estereo)}h", *estereo))
-´´´
+```
 
 #### Subida del resultado al repositorio GitHub y *pull-request*
 
